@@ -2,30 +2,57 @@ html{
     scroll-behavior: smooth;
 }
 
+header{
+  background-color:#008000;
+  padding: 2%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+.fixo{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
 body{
     background-color: #1C1C1C;
 
 }
 
 .menu{
-    background-color:  #008000;
-
-    margin-bottom: 3%;
+  background-color:black ;
+  padding-top: 1%;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1cm;
+  width: 100%;
+  position: fixed;
 }
 
-.itens_menu{
-    padding-top: 1%;
-    line-height: 1.5;
-    text-align: center;
-    font-size: 1.3em;
+
+.itens_Menu, .itens_sumario, .menu_ext{
+  padding-top: 1%;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1cm;
+} 
+
+
+.itens_Menu a:visited, .itens_Menu a:link,  .menu_ext a:visited, .menu_ext a:link{
+  color:  #008000;
+  text-decoration: none;
+  font-weight: bolder;
+
 }
 
-.itens_menu a:visited, .itens_menu a:link{
-    color: #008000;
-    text-decoration: none;
-    font-weight: bolder;
-    text-align: center;
-}
+.itens_Menu a:hover, .menu_ext a:hover, .itens_sumario a:hover {background-color: rgba(105,105,105);}
+
 
 .itens_menu a:hover{
     background-color: rgb(255,165,0);
@@ -67,12 +94,12 @@ figure{
     margin-bottom: 2%;
 }
 
-#mais a:link, mais a: :visited{
-    color: #fdead;
+#mais a:link, #mais a: :visited{
+  background-color:yellow; 
 }
 
 #mais a: :hover{
-    color :blak ;
+  background-color:#008000;
 }
 
 footer{
@@ -189,6 +216,13 @@ footer p {
     margin-top: 6px;
   }
   
+.container{
+  width: 70%;
+ margin: auto;
+text-align: center;
+line-height: 0,5cm;
+}
+
   /* Clear floats after the columns */
   .row:after {
     content: "";
